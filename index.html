@@ -11,12 +11,13 @@
     <link rel="manifest" href="./assets/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-indigo-600 flex items-center justify-center">
-    <div class="bg-yellow-200 rounded-[20px] border-[2px] p-[100px]">
-        <div id="container">
-            <textarea class="h-[250px] w-[400px] p-6 rounded-[20px]" placeholder="Type or paste your word here..."></textarea>  
-            <p><span id="wordNum">0 </span> words, <span id="charNum">0 </span> characters </p>    
-          </div>
+<body class="bg-gradient-to-r from-purple-500 to-pink-500 flex h-screen items-center justify-center">
+    <div class="bg-yellow-200 flex flex-col items-center rounded-[20px] border-[2px] p-[100px]">
+        <h1 class="text-[40px] mb-4 bold text-indigo-600">WordCount <span class="text-red-600">App</span></h1>
+        <div id="container flex items-center justify-center drop-shadow-lg">
+            <textarea class="h-[250px] w-[400px] p-6 rounded-[20px] bold family-" placeholder="Type or paste your word here..."></textarea>  
+            <p class="text-[40px] bold "><span class="text-indigo-600" id="wordNum">0 </span> words, <span id="charNum" class="text-indigo-600">0 </span> characters </p>    
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
